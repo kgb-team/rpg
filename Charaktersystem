@@ -1,0 +1,56 @@
+#Charaktersystem
+class Newcharacter():
+    #Name
+    def setname(self, name): 
+        self.named=name
+        return True
+    def getname(self):
+        return self.named
+    #Aussehen
+    Haarfarbe=["schwarz", "braun", "blond", "rot"]
+    Haarlänge=["lang", "mittel", "kurz"]
+    Augenfarbe=["schwarz", "blau", "grün", "rot", "weiß", "braun"]
+    Körperbau=["dünn", "dick", "muskulös", "drahtig"]
+    def setlook(self, Aussehen):
+        self.look=Aussehen
+        return True
+    def getlook(self):
+        return self.look
+    #Rasse
+    Rassen=["Ork", "Zwerge", "Kandri", "Menschen"]
+    def setrace(self, race):
+        self.race=race
+        return True
+    def getrace(self):
+        return self.race
+    #Rollen
+    Rollen=["Paladin", "Schurke", "Magier", "Krieger", "Priester", "Jäger", "Druide"]
+    Attribute={"Hp":0, "Attack":0, "Ability Power":0, "Defense":0, "Magic Defense":0}
+    def setrole(self, role):
+        self.role=role
+        return True
+    def getrole(self):
+        return self.role
+    def roleattributes(self):
+        self.attributes=Attribute
+    #Inventar
+    inventory={}
+    
+    def setinventory(self, items, numbers):
+        self.inventory[items]=numbers
+        return True
+    def getinventory(self):
+        return self.inventory
+
+Pob=Newcharacter()
+Pob.setname(input("Name:"))
+print(Pob.getname())
+Pob.setlook(dict(Haarfarbe=input("Haarfarbe %s:" %Pob.Haarfarbe), Haarlänge=input("Haarlänge %s:" %Pob.Haarlänge), Augenfarbe=input("Augenfarbe %s:" %Pob.Augenfarbe),\
+                 Körperbau=input("Haarfarbe %s:" %Pob.Körperbau)))
+print(Pob.getlook())
+Pob.setrace(input("Rasse: %s" %Pob.Rassen))
+print(Pob.getrace())
+Pob.setrole(input("Rolle: %s" %Pob.Rollen))
+print(Pob.getrole())
+Pob.setinventory()
+print(Pob.getinventory())
