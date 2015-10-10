@@ -1,7 +1,8 @@
 class Newcharacter():
   def __init__(self):
     self.available = {}
-    self.available["roles"] = ["Paladin", "Schurke", "Magier", "Krieger", "Priester", "Jäger", "Hexenmeister"]
+    self.available["races"] = ["Kandri", "Menschen", "Zwerge", "Orks"]
+    self.available["roles"] = ["Paladin", "Schurke", "Magier", "Krieger", "Priester", "Jäger", "Druide"]
     self.available["haircolors"] = ["schwarz", "braun", "blond", "rot"]
     self.available["hairlengths"] = ["lang", "mittel", "kurz"]
     self.available["eyecolors"] = ["schwarz", "blau", "grün", "rot", "weiß", "braun"]
@@ -9,6 +10,7 @@ class Newcharacter():
     
     self.name = ""
     self.look = {}
-    self.role = None
-    self.attributes = {"Hp": 0, "Attack": 0, "Ability Power": 0, "Defense": 0, "Magic Defense": 0}
+    self.attributes = {}
     self.inventory = {}
+    self.items = None
+    self.numbers = None
