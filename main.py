@@ -34,11 +34,13 @@ print_list(playerObj.available["bodystructures"])
 playerObj.look["bodystructure"] = int(input("Körperbau: "))
 
 print("Wähle Gegenstände:")
-playerObj.items = input("Gegenstände:")
-playerObj.numbers = input("Anzahlen:")
+playerObj.items = input("Gegenstände:").split(",")
+playerObj.numbers = list(map(int, input("Anzahlen:").split(",")))
 playerObj.inventory = dict(zip(playerObj.items, playerObj.numbers))
+
 
 print(playerObj.look)
 print(playerObj.attributes)
 print(playerObj.inventory)
 
+ 

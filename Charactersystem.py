@@ -14,3 +14,4 @@ class Newcharacter():
     self.inventory = {}
     self.items = None
     self.numbers = None
+
