@@ -43,13 +43,13 @@ class Levelsystem(Newcharacter):
   def objxp(self):
     self.gainedxp =
     self.excessxp = self.gainedxp-maxxp
-    self.xp = self.excessxp
   
   def objlevel(self):
     self.level = 0
     self.maxlevel = 100
     if self.gainedxp >= maxxp:
       self.level = self.level+1
+      self.xp = self.excessxp
   
   def levelstats(self)
     self.levelstats = {"Hp":self.statsset["Hpbase"]+self.level*5, "Attack":self.statsset["Attackbase"]+self.level*5,\
