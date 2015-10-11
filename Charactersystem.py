@@ -11,10 +11,9 @@ class Newcharacter():
                             {"Hpbase":0.75, "Attackbase":2, "Defensebase":0.75, "Abilitypowerbase":1, "Magicdefensebase":1},
                             {"Hpbase":0.75, "Attackbase":0.75, "Defensebase":0.5, "Abilitypowerbase":2, "Magicdefensebase":2},
                             {"Hpbase":1.5, "Attackbase":1.5, "Defensebase":1.5, "Abilitypowerbase":0.5, "Magicdefensebase":0.5},
-                            {"Hpbase":1, "Attackbase":1, "Defensebase":1.5, "Abilitypowerbase":1.5, "Magicdefensebase":1.5},
                             {"Hpbase":1, "Attackbase":2, "Defensebase":0.5, "Abilitypowerbase":0.5, "Magicdefensebase":1.5},
                             {"Hpbase":1, "Attackbase":1, "Defensebase":1, "Abilitypowerbase":1.5, "Magicdefensebase":1.5}]
-  available["roles"] = ["Paladin", "Schurke", "Magier", "Krieger", "Priester", "Jäger", "Druide"]
+  available["roles"] = ["Paladin", "Schurke", "Magier", "Krieger", "Jäger", "Druide"]
   available["affinity"] = ["Gegner", "Verbündeter", "Gesteuerter Verbündeter"]
   available["haircolors"] = ["schwarz", "braun", "blond", "rot"]
   available["hairlengths"] = ["lang", "mittel", "kurz"]
