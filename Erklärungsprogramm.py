@@ -10,6 +10,6 @@ def Chris():
   
   race="Chinokke"
   use="Kartenmann"
-  print("Christian ist ein", look, "dessen Nutzen es ist unser", use, "zu sein")
+  print("Christian ist ein", race, "dessen Nutzen es ist unser", use, "zu sein")
 
 Chris()
