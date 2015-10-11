@@ -1,3 +1,6 @@
 from ServerNetwork import NetworkConnector
+
 network = NetworkConnector()
-network.waitforclients()
+while True:
+  msgObj = network.getNextMessageObj()
+  network.relay(msgObj)
