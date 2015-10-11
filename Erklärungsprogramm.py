@@ -6,10 +6,10 @@ def Jonas():
   print(x, y)
 
 
-def Chris():
+def Chris(a, b):
   
-  race="Chinokke"
-  use="Kartenmann"
+  look=a
+  use=b
   print("Christian ist ein", look, "dessen Nutzen es ist unser", use, "zu sein")
 
-Chris()
+Chris(input("Rasse:"), input("Nutzen:"))
