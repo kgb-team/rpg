@@ -1,3 +1,4 @@
+
 #Blaupause zum erstellen von Charaktere
 class Newcharacter():
   #Funktion, die alles beim zuweisen zu einem Objekt einmal ausführt
@@ -50,7 +51,7 @@ class Levelsystem(Newcharacter):
       self.level = self.level+1
       self.xp = self.excessxp
   
-  def levelstats(self)
+  def levelstats(self):
     self.levelstats = {"Hp":self.statsset["Hpbase"]+self.level*5, "Attack":self.statsset["Attackbase"]+self.level*5,\
     "Defense":self.statsset["Defensebase"]+self.level*5, "Abilitypower":self.statsset["Abilitypowerbase"]+self.level*5,\
     "Magicdefense":self.statsset["Magicdefensebase"]+self.level*5,}    

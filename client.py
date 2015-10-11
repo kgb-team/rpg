@@ -1,3 +1,4 @@
+
 from Charactersystem import Newcharacter
 from ClientNetwork import NetworkConnector
 
