@@ -35,4 +35,20 @@ class Newcharacter():
                     "Defensebase": racestat["Defensebase"] * rolestat["Defensebase"],
                     "Abilitypowerbase": racestat["Abilitypowerbase"] * rolestat["Abilitypowerbase"],
                     "Magicdefensebase": racestat["Magicdefensebase"] * rolestat["Magicdefensebase"]}
-    print(self.statsset)
+                    
+class Levelsystem(Newcharacter):
+  
+  maxxp = self.level
+  
+  def objxp(self):
+    self.gainedxp =
+    self.excessxp = self.gainedxp-maxxp
+    self.xp = self.excessxp
+  
+  def objlevel(self):
+    self.level = 0
+    self.maxlevel = 100
+    if self.gainedxp >= maxxp:
+      self.level = self.level+1
+
+class Charactercontrol(Newcharacter, Levelsystem):
