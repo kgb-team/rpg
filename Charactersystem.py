@@ -50,5 +50,10 @@ class Levelsystem(Newcharacter):
     self.maxlevel = 100
     if self.gainedxp >= maxxp:
       self.level = self.level+1
+  
+  def levelstats(self)
+    self.levelstats = {"Hp":self.statsset["Hpbase"]+self.level*5, "Attack":self.statsset["Attackbase"]+self.level*5,\
+    "Defense":self.statsset["Defensebase"]+self.level*5, "Abilitypower":self.statsset["Abilitypowerbase"]+self.level*5,\
+    "Magicdefense":self.statsset["Magicdefensebase"]+self.level*5,}    
 
 class Charactercontrol(Newcharacter, Levelsystem):
