@@ -1,6 +1,6 @@
 
 #Blaupause zum erstellen von Charaktere
-class Newcharacter():
+class Character():
   #Funktion, die alles beim zuweisen zu einem Objekt einmal ausführt
   available = {}
   available["racestats"] = [{"Hpbase":100, "Attackbase":50, "Defensebase":20, "Abilitypowerbase":60, "Magicdefensebase":30},
@@ -36,12 +36,12 @@ class Newcharacter():
                     "Abilitypowerbase": racestat["Abilitypowerbase"] * rolestat["Abilitypowerbase"],
                     "Magicdefensebase": racestat["Magicdefensebase"] * rolestat["Magicdefensebase"]}
                     
-class Levelsystem(Newcharacter):
+class Levelsystem(Character):
   
   maxxp = self.level
   
   def objxp(self):
-    self.gainedxp =
+    self.gainedxp = 
     self.excessxp = self.gainedxp-maxxp
   
   def objlevel(self):
@@ -56,10 +56,20 @@ class Levelsystem(Newcharacter):
     "Defense":self.statsset["Defensebase"]+self.level*5, "Abilitypower":self.statsset["Abilitypowerbase"]+self.level*5,\
     "Magicdefense":self.statsset["Magicdefensebase"]+self.level*5,}    
 
-class Charactercontrol(Newcharacter, Levelsystem):
+class Charactercontrol(Character, Levelsystem):
+  characters = []
+  dead = None
   def character(self):
-    self.character = [self.name, self.look, self.attributes, self.inventory]
+    self.character = [self.name, self.look, self.attributes, self.inventory, self.living]
+    characters.append(self.character)
+    def livecontrol(self):
+      if Levelsystem.levelstats["Hp"] <= 0:
+        self.character.append(dead)
+      
+      
     
+    
+  
   
  
   

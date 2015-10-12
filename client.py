@@ -1,5 +1,5 @@
 
-from Charactersystem import Newcharacter
+from Charactersystem import Character
 from ClientNetwork import NetworkConnector
 
 #network = NetworkConnector()
