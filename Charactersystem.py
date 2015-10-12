@@ -57,3 +57,9 @@ class Levelsystem(Newcharacter):
     "Magicdefense":self.statsset["Magicdefensebase"]+self.level*5,}    
 
 class Charactercontrol(Newcharacter, Levelsystem):
+  def character(self):
+    self.character = [self.name, self.look, self.attributes, self.inventory]
+    
+  
+ 
+  

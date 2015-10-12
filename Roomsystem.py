@@ -5,3 +5,15 @@ class Newroom():
      [x1y5, x2y5, x3y5, x4y5, x5y5, x6y5, x7y5, x8y5, x9y5, x10y5], [x1y6, x2y6, x3y6, x4y6, x5y6, x6y6, x7y6, x8y6, x9y6, x10y6]\
      [x1y7, x2y7, x3y7, x4y7, x5y7, x6y7, x7y7, x8y7, x9y7, x10y7], [x1y8, x2y8, x3y8, x4y8, x5y8, x6y8, x7y8, x8y8, x9y8, x10y8]\
      [x1y9, x2y9, x3y9, x4y9, x5y9, x6y9, x7y9, x8y9, x9y9, x10y9], [x1y10, x2y10, x3y10, x4y10, x5y10, x6y10, x7y10, x8y10, x9y10, x10y10]]
+
+class Objects(Newroom):
+   objectlist = []
+   def createobject(self, id, position):
+    self.object = objectlist[id]
+    self.position = position
+  
+  
+   
+    
+    
+    
