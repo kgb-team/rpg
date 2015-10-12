@@ -53,8 +53,8 @@ print_list(playerObj.available["bodystructures"])
 playerObj.look["bodystructure"] = int(input("Körperbau: "))
 
 print("Wähle Gegenstände:")
-playerObj.items = input("Gegenstände:").split(",")
-playerObj.numbers = list(map(int, input("Anzahlen:").split(",")))
+playerObj.items = input("Gegenstände: ").split(",")
+playerObj.numbers = list(map(int, input("Anzahlen: ").split(",")))
 playerObj.inventory = dict(zip(playerObj.items, playerObj.numbers))
 
 playerObj.calc_stats(playerObj.available["racestats"][playerObj.attributes["race"]], playerObj.available["rolestats"][playerObj.attributes["role"]])
